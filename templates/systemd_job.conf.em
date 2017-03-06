@@ -32,6 +32,7 @@ Description="bringup @(name)"
 
 [Service]
 Type=simple
+User=@(user)
 ExecStart=/usr/sbin/@(name)-start
 
 [Install]

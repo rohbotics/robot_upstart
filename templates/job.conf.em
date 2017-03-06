@@ -44,5 +44,7 @@ stop on runlevel [016]
 console log
 respawn
 
+setuid @(user)
+
 exec @(name)-start
 pre-stop exec @(name)-stop
